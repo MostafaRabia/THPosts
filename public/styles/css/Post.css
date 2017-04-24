@@ -1,0 +1,126 @@
+/* Start Font */
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url("../fonts/flat-font/JF-Flat-regular.eot");
+  src: url("../fonts/flat-font/JF-Flat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/flat-font/JF-Flat-regular.svg#JF Flat Regular") format("svg"), url("../fonts/flat-font/JF-Flat-regular.woff") format("woff"), url("../fonts/flat-font/JF-Flat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* End Font */
+/* Start Vars */
+/* End Vars */
+/* Start Post */
+.sectionPost .post-Item-Div {
+  position: relative;
+  color: black; }
+  .sectionPost .post-Item-Div .imgDiv {
+    position: relative; }
+    .sectionPost .post-Item-Div .imgDiv img {
+      min-width: 100%;
+      max-height: 700px; }
+    .sectionPost .post-Item-Div .imgDiv .blackImg {
+      background-color: rgba(1, 1, 1, 0.2);
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%; }
+    .sectionPost .post-Item-Div .imgDiv .imgProfile {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid black;
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9; }
+      @media (max-width: 360px) {
+        .sectionPost .post-Item-Div .imgDiv .imgProfile {
+          bottom: 15%; } }
+      @media (min-width: 361px) and (max-width: 600px) {
+        .sectionPost .post-Item-Div .imgDiv .imgProfile {
+          bottom: 21%; } }
+      .sectionPost .post-Item-Div .imgDiv .imgProfile img {
+        width: 100%;
+        height: 100%; }
+  .sectionPost .post-Item-Div .postDiv {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    background-color: white;
+    /* Start Pagination */
+    /* End Pagination */ }
+    .sectionPost .post-Item-Div .postDiv h3 {
+      margin-left: 10px;
+      margin-right: 10px; }
+    .sectionPost .post-Item-Div .postDiv .information {
+      font-size: 14px;
+      margin-top: -15px; }
+      .sectionPost .post-Item-Div .postDiv .information i {
+        font-size: 14px; }
+      .sectionPost .post-Item-Div .postDiv .information div {
+        display: inline;
+        margin-right: 5px; }
+      .sectionPost .post-Item-Div .postDiv .information .Likes i {
+        margin-right: 5px; }
+    .sectionPost .post-Item-Div .postDiv .post {
+      font-size: 24px;
+      word-wrap: break-word;
+      margin-left: 10px;
+      margin-right: 10px; }
+    .sectionPost .post-Item-Div .postDiv .commentDiv {
+      display: none; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv blockquote {
+        padding-right: 1.5rem;
+        border-right: 5px solid #ee6e73;
+        border-left: none;
+        padding-left: 0; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .preloader-wrapper {
+        direction: ltr;
+        display: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 5px; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox {
+        position: relative;
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0; }
+        .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox div {
+          margin: 5px; }
+        .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox .Comment p {
+          margin: 10px;
+          word-wrap: break-word; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .new {
+        border-color: #F44336 !important; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv a {
+        outline: none; }
+        .sectionPost .post-Item-Div .postDiv .commentDiv a img {
+          top: 12px;
+          width: 60px;
+          height: 60px;
+          float: right;
+          border-radius: 50%; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .Delete_Edit .deleteCommentA {
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .input-field .noteAddComment {
+        font-size: 14px; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .input-field .loginToComment {
+        display: none; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv .input-field .submitAddComment {
+        margin: 5px; }
+    .sectionPost .post-Item-Div .postDiv .pagination-Div {
+      color: black; }
+  .sectionPost .post-Item-Div .opinionDiv .fixed-action-btn {
+    position: relative;
+    right: 0;
+    padding: 15px; }
+  .sectionPost .post-Item-Div .opinionDiv a .Like {
+    color: green; }
+  .sectionPost .post-Item-Div .opinionDiv a .Desike {
+    color: black; }
+
+/* End Post */
+
+/*# sourceMappingURL=Post.css.map */

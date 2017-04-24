@@ -1,0 +1,163 @@
+@import 'Defaults';
+
+/* Start Post */
+
+.sectionPost{
+	.post-Item-Div{
+		position: relative;
+		color: black;
+		.imgDiv{
+			position: relative;
+			img{
+				min-width: 100%;
+				max-height: 700px;
+			}
+			.blackImg{
+				background-color: rgba(1,1,1,0.2);
+				position: absolute;
+				top: 0;
+				height: 100%;
+				width: 100%;
+			}
+			.imgProfile{
+				width: 75px;
+				height: 75px;
+				border-radius: 50%;
+				overflow: hidden;
+				border: 2px solid black;
+				position: absolute;
+				@media (max-width: 360px){
+					bottom: 15%;
+				}
+				@media (min-width: 361px) and (max-width: 600px){
+					bottom: 21%;
+				}
+				bottom: 25%;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: 9;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.postDiv{
+			position: absolute;
+			top: 70%;
+			width: 100%;
+			background-color: white;
+			h3{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.information{
+				font-size: 14px;
+				margin-top: -15px;
+				i{
+					font-size: 14px;
+				}
+				div{
+					display: inline;
+					margin-right: 5px;
+				}
+				.Likes{
+					i{
+						margin-right: 5px;
+					}
+				}
+			}
+			.post{
+				font-size: 24px;
+				word-wrap: break-word;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.commentDiv{
+				display: none;
+				blockquote{
+					padding-right: 1.5rem;
+					border-right: 5px solid #ee6e73;
+					border-left: none;
+					padding-left: 0;
+				}
+				.preloader-wrapper{
+					direction: ltr;
+					display: none;
+					margin-right: auto;
+					margin-left: auto;
+					margin-bottom: 5px;
+				}
+				.commentBox{
+					position: relative;
+					border-bottom: 1px solid #e0e0e0;
+					border-top: 1px solid #e0e0e0;
+					div{
+						margin: 5px;
+					}
+					.Comment{
+						p{
+							margin: 10px;
+							word-wrap: break-word;
+						}
+					}
+				}
+				.new{
+					border-color: #F44336 !important;
+				}
+				a{
+					outline: none;
+					img{
+						top: 12px;
+						width: 60px;
+						height: 60px;
+						float: right;
+						border-radius: 50%;
+					}
+				}
+				.Delete_Edit{
+					.deleteCommentA{
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+				}
+				.input-field{
+					.noteAddComment{
+						font-size: 14px;
+					}
+					.loginToComment{
+						display: none;
+					}
+					.submitAddComment{
+						margin: 5px;
+					}
+				}
+			}
+			/* Start Pagination */
+
+			.pagination-Div{
+				color: black;
+			}
+
+			/* End Pagination */
+		}
+		.opinionDiv{
+			.fixed-action-btn{
+				position: relative;
+				right: 0;
+				padding: 15px;
+			}
+			a{
+				.Like{
+					color: green;
+				}
+				.Desike{
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+/* End Post */

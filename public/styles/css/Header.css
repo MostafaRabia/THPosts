@@ -1,0 +1,123 @@
+/* Start Font */
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url("../fonts/flat-font/JF-Flat-regular.eot");
+  src: url("../fonts/flat-font/JF-Flat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/flat-font/JF-Flat-regular.svg#JF Flat Regular") format("svg"), url("../fonts/flat-font/JF-Flat-regular.woff") format("woff"), url("../fonts/flat-font/JF-Flat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* End Font */
+/* Start Vars */
+/* End Vars */
+/* Start Defaults */
+body {
+  direction: rtl;
+  font-family: "JF Flat Regular";
+  overflow: hidden; }
+
+/* End Defaults */
+/* Start Scroll */
+::-webkit-scrollbar {
+  width: 1px;
+  background-color: #454c4d; }
+
+::-webkit-scrollbar:hover {
+  width: 8px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #7f8c8d; }
+
+/* End Scroll */
+/* Start Loader Section */
+.loader-Section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #7f8c8d;
+  z-index: 999999999;
+  position: fixed;
+  top: 0; }
+  .loader-Section .spinner {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #333;
+    position: relative;
+    top: 40vh;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out; }
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0; } }
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+/* End Loader Section */
+/* Start Section Black */
+.black-Section {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 1, 1, 0.5); }
+
+/* End Section Black */
+/* Start Types */
+.side-nav {
+  direction: ltr;
+  text-align: right; }
+  .side-nav input, .side-nav label {
+    direction: rtl; }
+  .side-nav li {
+    margin-top: 15px; }
+    .side-nav li a {
+      font-size: 16px; }
+    .side-nav li .contactUs:hover {
+      background-color: transparent;
+      cursor: default; }
+    .side-nav li .home-Page {
+      background-color: transparent;
+      text-align: center; }
+      .side-nav li .home-Page:hover {
+        background-color: transparent; }
+  .side-nav input[type=text].validate + label {
+    width: 96%; }
+  .side-nav .select-wrapper span.caret {
+    left: 0;
+    right: auto; }
+  .side-nav .select-wrapper label {
+    font-size: 0.9rem;
+    right: 0; }
+  .side-nav .dropdown-content {
+    direction: ltr; }
+    .side-nav .dropdown-content li {
+      text-align: right;
+      direction: rtl; }
+
+.show-Types {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.drag-Arrow {
+  position: fixed;
+  top: 50%;
+  right: -12px;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.5); }
+
+/* End Types */
+
+/*# sourceMappingURL=Header.css.map */

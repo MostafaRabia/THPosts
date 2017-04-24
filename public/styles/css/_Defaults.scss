@@ -1,0 +1,79 @@
+/* Start Font */
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url('../fonts/flat-font/JF-Flat-regular.eot');
+    src: url('../fonts/flat-font/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/flat-font/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/flat-font/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/flat-font/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End Font */
+
+/* Start Vars */
+@mixin transition($selector,$time,$type){
+    transition: $selector $time $type;
+    -webkit-transition: $selector $time $type;
+    -moz-transition: $selector $time $type;
+    -o-transition: $selector $time $type;
+}
+@mixin borderRadius($pixels){
+    -webkit-border-radius: $pixels;
+    -moz-border-radius: $pixels;
+    -ms-border-radius: $pixels;
+    -o-border-radius: $pixels;
+    border-radius: $pixels;
+}
+@mixin border($pixels,$type,$color){
+    -webkit-border: $pixels $type $color;
+    -moz-border: $pixels $type $color;
+    -ms-border: $pixels $type $color;
+    -o-border: $pixels $type $color;
+    border: $pixels $type $color;
+}
+@mixin boxShadow($horizontal,$vertical,$blur,$color){
+    box-shadow: $horizontal $vertical $blur $color;
+    -webkit-box-shadow: $horizontal $vertical $blur $color;
+    -o-box-shadow: $horizontal $vertical $blur $color;
+    -moz-box-shadow: $horizontal $vertical $blur $color;
+}
+@mixin boxShadow1($horizontal,$vertical,$blur,$color,$horizontal1,$vertical1,$blur1,$color1){
+    box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1;
+    -webkit-box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1;
+    -o-box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1;
+    -moz-box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1;
+}
+@mixin boxShadow2 ($horizontal,$vertical,$blur,$color,$horizontal1,$vertical1,$blur1,$color1,$horizontal2,$vertical2,$blur2,$color2){
+    box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1
+                ,$horizontal2 $vertical2 $blur2 $color2;
+    -webkit-box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1
+                ,$horizontal2 $vertical2 $blur2 $color2;
+    -o-box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1
+                ,$horizontal2 $vertical2 $blur2 $color2;
+    -moz-box-shadow: $horizontal $vertical $blur $color
+                ,$horizontal1 $vertical1 $blur1 $color1
+                ,$horizontal2 $vertical2 $blur2 $color2;
+}
+@mixin scale($num){
+    -webkit-transform: scale($num);
+    -moz-transform: scale($num);
+    -ms-transform: scale($num);
+    -o-transform: scale($num);
+    transform: scale($num);
+}
+@mixin rotate($data){
+    -webkit-transform: rotate($data);
+    -moz-transform: rotate($data);
+    -ms-transform: rotate($data);
+    -o-transform: rotate($data);
+    transform: rotate($data);
+}
+/* End Vars */

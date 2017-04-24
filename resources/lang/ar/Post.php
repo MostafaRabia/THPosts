@@ -1,0 +1,27 @@
+<?php
+return [
+	'Like'	=>	'أعجبني',
+	'Deslike'	=>	'لم يعجبني',
+	'Share'	=>	'مشاركة عبر الفيسبوك',
+	'errorOpinionTitle' => 'خطأ',
+	'opinionMessage' => 'لوضع اعجاب او تعليق يجب التسجيل اولاً',
+	'opinionTitle' => 'إشعار',	
+	'likeMessage' => 'تم وضع اعجاب بنجاح',
+	'deleteLikeMessage' => 'تم ازالة الاعجاب بنجاح',
+	'addComment' => 'اضافة تعليق <br> يمكنك استخدام اوسام html',
+	'noteAddComment' => 'لسطر جديد اضغط tab',
+	'deleteCommentModalTitle' => 'رسالة تأكيد',
+	'deleteCommentModalMessage' => 'هل تريد ازالة التعليق ؟',
+	'deleteCommentModalYes' => 'نعم',
+	'deleteCommentModalNo' => 'لا',
+	'editComment' => 'تعديل',
+	'loginToComment' => 'يجب عليك التسجيل لتضع تعليقا , للتسجيل :',
+	'loginByGoogle' => 'جوجل +',
+	'loginByFacebook' => 'فيسبوك',
+	'Login' => 'تسجيل الدخول',
+	'desikeMessage' => 'تم اضافة لم يعجبني بنجاح',
+	'deleteDeslikeMessage' => 'تم ازالة لم يعجبني بنجاح',
+	'titleMessageWait' => 'إنتظر',
+	'messageWait' => 'لديك 5 تعليقات كل 20 ثانية , يتبقي',
+
+];

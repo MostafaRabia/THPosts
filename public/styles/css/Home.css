@@ -1,0 +1,77 @@
+/* Start Font */
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url("../fonts/flat-font/JF-Flat-regular.eot");
+  src: url("../fonts/flat-font/JF-Flat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/flat-font/JF-Flat-regular.svg#JF Flat Regular") format("svg"), url("../fonts/flat-font/JF-Flat-regular.woff") format("woff"), url("../fonts/flat-font/JF-Flat-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* End Font */
+/* Start Vars */
+/* End Vars */
+/* Start Posts */
+.posts-Section .row .col {
+  float: right; }
+.posts-Section .post-Item-Div {
+  display: block;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; }
+  .posts-Section .post-Item-Div:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05); }
+  .posts-Section .post-Item-Div .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #212121;
+    margin-right: 0px; }
+    .posts-Section .post-Item-Div .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+      color: #818181; }
+  @media (max-width: 970px) {
+    .posts-Section .post-Item-Div .card-reveal p {
+      font-size: 20px; } }
+  .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .watches-Icon-Div {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .watches-Icon-Div i, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .watches-Icon-Div p {
+      display: block;
+      text-align: center; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .watches-Icon-Div p {
+      margin-top: 0; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .watches-Icon-Div:hover {
+      color: #818181; }
+  .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div {
+    display: inline-block;
+    width: 48.984%; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div i, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div p, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div i, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div p {
+      display: block;
+      text-align: center; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div i, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div i {
+      margin-top: 20px; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div p, .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div p {
+      margin-top: 5px; }
+  .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div {
+    background-color: rgba(76, 175, 80, 0.5);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .likes-Div:hover {
+      background-color: white;
+      color: #4CAF50; }
+  .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div {
+    background-color: rgba(244, 67, 54, 0.5);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    .posts-Section .post-Item-Div .watches-Likes-Dislikes-Div .dislikes-Div:hover {
+      background-color: white;
+      color: #F44336; }
+
+/* End Posts */
+
+/*# sourceMappingURL=Home.css.map */

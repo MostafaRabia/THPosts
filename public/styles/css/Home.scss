@@ -1,0 +1,79 @@
+@import 'Defaults';
+
+/* Start Posts */
+
+.posts-Section{
+	.row .col{
+		float: right;
+	}
+	.post-Item-Div{
+		display: block;
+		@include transition(all,0.5s,ease);
+		&:hover{
+			@include scale(1.05)
+		}
+		.card-action{
+			a:not(.btn):not(.btn-large):not(.btn-floating){
+				color: #212121;
+				margin-right: 0px;
+				&:hover{
+					color: #818181;
+				}
+			}
+		}
+		.card-reveal{
+			@media(max-width: 970px){
+				p{
+					font-size: 20px;
+				}
+			}
+		}
+		.watches-Likes-Dislikes-Div{
+			.watches-Icon-Div{
+				@include transition(all,0.5s,ease);
+				i,p{
+					display: block;
+					text-align: center;
+				}
+				p{
+					margin-top: 0;
+				}
+				&:hover{
+					color: #818181;
+				}
+			}
+			.likes-Div,.dislikes-Div{
+				display: inline-block;
+				width: 48.984%;
+				i,p{
+					display: block;
+					text-align: center;
+				}
+				i{
+					margin-top: 20px;
+				}
+				p{
+					margin-top: 5px;
+				}
+			}
+			.likes-Div{
+				background-color: rgba(76,175,80,0.5);
+				@include transition(all,0.5s,ease);
+				&:hover{
+					background-color: white;
+					color: #4CAF50;
+				}
+			}
+			.dislikes-Div{
+				background-color: rgba(244,67,54,0.5);
+				@include transition(all,0.5s,ease);
+				&:hover{
+					background-color: white;
+					color: #F44336;
+				}
+			}
+		}
+	}
+}
+
+/* End Posts */
