@@ -6,20 +6,20 @@
     <link rel="shortcut icon" href="{{app('image')}}/icon.png" type="image/png" />
     {!! Html::style('http://fonts.googleapis.com/icon?family=Material+Icons') !!}
     {!! Html::style(app('css').'/materialize.min.css') !!}
-    {!! Html::style(app('css').'/animate.min.css') !!}
     {!! Html::style(app('css').'/Header.css') !!}
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {!! Html::script(app('js').'/jquery.min.js') !!}
     {!! Html::script(app('js').'/materialize.min.js') !!}
     {!! Html::script(app('js').'/Header.min.js') !!}
     {!! Html::script(app('js').'/materialize-pagination.min.js') !!}
+    {!! Html::script(app('js').'/jQuery.scrollSpeed.min.js') !!}
     <style type="text/css">
       /* Start Section Wallpaper */
 
       .wallpaper-Section{
           width: 100vw;
           height: 100vh;
-          background-image: url({{app('image')}}/wallpaper.jpeg);
+          background-image: url(data:image/jpeg;base64,{{base64_encode(file_get_contents('public/images/wallpaper.jpeg'))}});
           background-size: cover;
           position: fixed;
       }
@@ -30,7 +30,12 @@
   <body>
     <!-- Start Section Loader -->
     <section class='loader-Section' id='loader-Section'>
-      <div class="spinner"></div>
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
     </section>
     <!-- End Section Loader -->
 

@@ -27,7 +27,8 @@
     color: #212121;
     margin-right: 0px; }
     .posts-Section .post-Item-Div .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
-      color: #818181; }
+      color: #818181;
+      cursor: pointer; }
   @media (max-width: 970px) {
     .posts-Section .post-Item-Div .card-reveal p {
       font-size: 20px; } }

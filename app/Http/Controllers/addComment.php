@@ -45,16 +45,20 @@ class addComment extends Controller
 			session()->put('antiSpam',$antiSpam);
 			$Div = '<div class="commentBox new">';
 			$Div .= '<div class="userImg">';
-			$Div .= '<a href="'.url('profile/'.auth()->user()->id).'"><img src="'.auth()->user()->image.'" alt="'.auth()->user()->image.'"></a><p><a href="'.url('profile/'.auth()->user()->id).'">'.auth()->user()->nickname.'</a></p>';
+			$Div .= '<a href="'.url('profile/'.auth()->user()->id).'"><img src="'.app('image').'/'.auth()->user()->image.'" alt="'.auth()->user()->image.'"></a><p><a href="'.url('profile/'.auth()->user()->id).'">'.auth()->user()->nickname.'</a></p>';
 			$Div .= '</div>';
 			$Div .= '<div class="Comment"><p>'.$r->input('comment').'</p></div>';
-			$Div .= '<div class="Delete_Edit"><a href="javascript:;"  url="'.url('deletecomment/'.$addComment->id).'" class="deleteCommentA"><i class="material-icons">clear</i></a><a href="'.url('editcomment/'.$addComment->id).'" class="editCommentA waves-effect waves-teal btn-flat">'.trans('Post.editComment').'</a></div>';
+			$Div .= '<div class="Delete_Edit"><a href="javascript:;" url="'.url('deletecomment/'.$addComment->id).'" class="deleteCommentA" id='.$addComment->id.'><i class="material-icons">clear</i></a><a href="javascript:;" class="editCommentA waves-effect waves-teal btn-flat">'.trans('Post.editComment').'</a></div>';
 			$Return = ['div'=>$Div,'status'=>'done'];
 			return $Return;
 		}
 	}
 	public function Delete($id){
 		$getComment = Comments::where('id',$id)->where('user_id',auth()->user()->id)->delete();
-		return redirect()->back();
+		if ($getComment){
+			return 'done';
+		}else{
+			return 'fail';
+		}
 	}
 }

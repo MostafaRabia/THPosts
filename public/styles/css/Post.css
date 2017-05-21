@@ -85,21 +85,19 @@
         position: relative;
         border-bottom: 1px solid #e0e0e0;
         border-top: 1px solid #e0e0e0; }
-        .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox div {
+        .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox .userImg, .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox .Comment {
           margin: 5px; }
         .sectionPost .post-Item-Div .postDiv .commentDiv .commentBox .Comment p {
           margin: 10px;
           word-wrap: break-word; }
       .sectionPost .post-Item-Div .postDiv .commentDiv .new {
         border-color: #F44336 !important; }
-      .sectionPost .post-Item-Div .postDiv .commentDiv a {
-        outline: none; }
-        .sectionPost .post-Item-Div .postDiv .commentDiv a img {
-          top: 12px;
-          width: 60px;
-          height: 60px;
-          float: right;
-          border-radius: 50%; }
+      .sectionPost .post-Item-Div .postDiv .commentDiv a img {
+        top: 12px;
+        width: 60px;
+        height: 60px;
+        float: right;
+        border-radius: 50%; }
       .sectionPost .post-Item-Div .postDiv .commentDiv .Delete_Edit .deleteCommentA {
         position: absolute;
         left: 0;

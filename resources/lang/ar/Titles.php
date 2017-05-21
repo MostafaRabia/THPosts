@@ -17,4 +17,9 @@ foreach (app('sortsBy') as $sortBy) {
 	$titlesOfSortsBy[$sortBy->sortByRoutes] .= ' | '.$titlesOfSite['nameOfSite'];
 }
 
-return array_merge($titlesOfTypes,$titlesOfSortsBy,$titlesOfSite);
+if (app('Profile')){
+	$titleOfProfile[app('Profile')['id']] = app('Profile')['name'];
+	$titleOfProfile[app('Profile')['id']] .= ' | '.$titlesOfSite['nameOfSite'];
+}
+
+return array_merge($titlesOfTypes,$titlesOfSortsBy,$titlesOfSite,$titleOfProfile);

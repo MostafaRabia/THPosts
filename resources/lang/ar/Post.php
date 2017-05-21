@@ -23,5 +23,7 @@ return [
 	'deleteDeslikeMessage' => 'تم ازالة لم يعجبني بنجاح',
 	'titleMessageWait' => 'إنتظر',
 	'messageWait' => 'لديك 5 تعليقات كل 20 ثانية , يتبقي',
-
+	'readMore' => '...رؤية المزيد',
+	'editCommentInput' => 'تعديل الكومنت',
+	
 ];

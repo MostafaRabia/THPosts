@@ -92,7 +92,7 @@
 					position: relative;
 					border-bottom: 1px solid #e0e0e0;
 					border-top: 1px solid #e0e0e0;
-					div{
+					.userImg,.Comment{
 						margin: 5px;
 					}
 					.Comment{
@@ -106,7 +106,6 @@
 					border-color: #F44336 !important;
 				}
 				a{
-					outline: none;
 					img{
 						top: 12px;
 						width: 60px;

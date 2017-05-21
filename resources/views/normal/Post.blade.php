@@ -2,7 +2,6 @@
 @section('center')
 {!! Html::style(app('css').'/Post.css') !!}
 {!! Html::script(app('js').'/Post.min.js') !!}
-{!! Html::script(app('js').'/tinymce/tinymce.min.js') !!}
 <!-- Start Section Post -->
 <section class="sectionPost">
 	<div class="container">
@@ -10,10 +9,10 @@
 			<div class="col s12">
 				<div class="post-Item-Div">
 					<div class="imgDiv">
-						<img src='{{app("image")}}/{{$post->image}}' class="responsive-img" alt='{{$post->image}}'/>
+						<img src='{{app("image")."/".$post->image}}' class="responsive-img" alt='{{$post->image}}'/>
 						<div class='blackImg'></div>
 						<div class='imgProfile'>
-					 		<a href="{{url('profile/'.$post->Authors->id)}}"><img src='{{$post->Authors->image}}' alt='{{$post->image}}'/></a>
+					 		<a href="{{url('profile/'.$post->Authors->id)}}"><img src='{{app("image")."/".$post->Authors->image}}' alt='{{$post->image}}'/></a>
 						</div> 
 					</div>
 					<div class='postDiv'>
@@ -45,10 +44,12 @@
 							</div>
 						</div>
 						<div class="commentDiv">
+						<input type="hidden" class="tinymce_js" value="{{url(app('js').'/tinymce/tinymce.min.js')}}">
+						<input type="hidden" class="conf_tinymce_js" value="{{url(app('js').'/ConTinyMce.min.js')}}">
 							@if (!auth()->guest())
 								<div class="input-field">
 									{!! Form::open(['url'=>'addcomment/'.$post->id,'method'=>'post','class'=>'addCommentForm ']) !!}
-									<textarea id="addComment" class="materialize-textarea addCommentInput" autofocus data-length="500" name="addComment"></textarea>
+									<textarea id="addComment" class="materialize-textarea" name="addComment"></textarea>
 									<button type="submit" class="btn-floating btn-small waves-effect waves-light red hide-on-large-only submitAddComment"><i class="material-icons">send</i></button>
 									{!! Form::close() !!}
 									<blockquote class="noteAddComment hide-on-med-and-down">
@@ -107,16 +108,16 @@
 								@foreach($comments as $comment)
 								<div class="commentBox">
 									<div class="userImg">
-										<a href="{{url('profile/'.$comment->User->id)}}"><img src="{{$comment->User->image}}" alt="{{$comment->User->image}}"></a>
+										<a href="{{url('profile/'.$comment->User->id)}}"><img src="{{app('image').'/'.$comment->User->image}}" alt="{{$comment->User->image}}"></a>
 										<p><a href="{{url('profile/'.$comment->User->id)}}">{{$comment->User->nickname}}</a></p>
 									</div>
 									<div class="Comment">
-										<p>{!!$comment->comment!!}</p>
+										{!!$comment->comment!!}
 									</div>
 									@if (!auth()->guest()&&auth()->user()->id == $comment->User->id)
 										<div class="Delete_Edit">
-											<a href="javascript:;" url="{{url('deletecomment/'.$comment->id)}}" class="deleteCommentA"><i class="material-icons">clear</i></a>
-											<a href="{{url('editcomment/'.$comment->id)}}" class="editCommentA waves-effect waves-teal btn-flat">{{trans('Post.editComment')}}</a>
+											<a href="javascript:;" url="{{url('deletecomment/'.$comment->id)}}" class="deleteCommentA" id='{{$comment->id}}'><i class="material-icons">clear</i></a>
+											<a href="javascript:;" class="editCommentA waves-effect waves-teal btn-flat">{{trans('Post.editComment')}}</a>
 										</div>
 									@endif
 								</div>
@@ -161,8 +162,22 @@
 	});
 </script>
 @endif
+<!-- Modal Structure Edit Comment -->
+@if (!auth()->guest())
+<div id="modalEditComment" class="modal">
+	<div class="modal-content">
+		<h4>{{trans('Post.editCommentInput')}}</h4>
+		<div class="input-field">
+			{!! Form::open(['url'=>'editcomment','method'=>'post','class'=>'editCommentForm ']) !!}
+				<textarea id="editComment" class="materialize-textarea" name="editComment"></textarea>
+				<button type="submit" class="btn-floating btn-small waves-effect waves-light red hide-on-large-only submitEditComment"><i class="material-icons">send</i></button>
+			{!! Form::close() !!}
+		</div>
+	</div>
+</div>
+@endif
 <!-- Modal Structure Delete Comment -->
-<div id="deleteCommentModal" class="modal deleteCommentModal">
+<div id="deleteCommentModal" class="modal">
 	<div class="modal-content">
 		<h4>{{trans('Post.deleteCommentModalTitle')}}</h4>
 		<p>{{trans('Post.deleteCommentModalMessage')}}</p>

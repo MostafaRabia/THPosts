@@ -8,7 +8,7 @@
 		<div class="row hide-on-med-only">
 			@php $i = 0 @endphp
 			@foreach ($posts as $post)
-			<div class='col l4 s12' data-wow-duration='1s'>
+			<div class='col l4 s12'>
 				<div class="post-Item-Div">
 					<div class="card sticky-action">
 						<div class="card-image">

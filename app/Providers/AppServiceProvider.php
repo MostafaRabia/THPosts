@@ -19,11 +19,11 @@ class AppServiceProvider extends ServiceProvider
     {
         /* Start Array App Singleton */
         $pathsArray = [
-            'css'=>url('public/styles/css'),
-            'js'=>url('public/styles/js'),
-            'image'=>url('public/images'),
-            'normal'=>'normal',
-            'admin'=>'admin'
+            'css'   => url('public/styles/css'),
+            'js'    => url('public/styles/js'),
+            'image' => url('public/images'),
+            'normal'=> 'normal',
+            'admin' => 'admin'
         ];
         foreach ($pathsArray as $Name => $Path) {
             app()->singleton($Name,function() use ($Path){
